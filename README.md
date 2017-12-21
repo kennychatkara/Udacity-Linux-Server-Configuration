@@ -58,7 +58,8 @@ Linux server configuration project which involved taking an Amazon Lightsail ins
 
 **Resources**
 ---------------  
-* https://modwsgi.readthedocs.io/en/develop/user-guides/virtual-environments.html
+* https://modwsgi.readthedocs.io/en/develop/user-guides/virtual-environments.html  
 * https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps  
-* https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps
+* https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps  
 * http://docs.sqlalchemy.org/en/latest/dialects/postgresql.html  
+* http://flask.pocoo.org/docs/0.10/deploying/mod_wsgi/#working-with-virtual-environments  
