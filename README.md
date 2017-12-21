@@ -40,4 +40,12 @@ Linux server configuration project which involved taking an Amazon Lightsail ins
     2. Installed the app's python module dependencies to the virtual environment  
      * Python modules: flask, sqlalchemy, flask-sqlalchemy, psycopg2, oauth2client, requests  
     3. Created PostgreSQL user with limited (create DB only) permissions to app's database  
-11. Downloaded and modified [Item Catalog app's source code](https://github.com/kennychatkara/fullstack-nanodegree-vm) to run on server in Python virtual environment using PostgreSQL database
+11. Downloaded and modified [Item Catalog app's source code](https://github.com/kennychatkara/fullstack-nanodegree-vm) to run on server in Python virtual environment using PostgreSQL database  
+
+
+**Resources**
+---------------  
+* https://modwsgi.readthedocs.io/en/develop/user-guides/virtual-environments.html
+* https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps  
+* https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps
+* http://docs.sqlalchemy.org/en/latest/dialects/postgresql.html  
