@@ -13,6 +13,14 @@ Linux server configuration project which involved taking an Amazon Lightsail ins
 **Web App Link**: [Item Catalog App](http://ec2-52-26-33-201.us-west-2.compute.amazonaws.com/catalog)  
 
 
+**Server Installed Software**
+---------------
+* Apache Web Server (with mod_wsgi module)
+* PostgreSQL Database
+* Python Package Installer (pip)
+* Git
+
+
 **Server Config Changes**
 ---------------
 1. Updated software packages  
