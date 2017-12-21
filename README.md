@@ -40,15 +40,20 @@ Linux server configuration project which involved taking an Amazon Lightsail ins
 5. Created additional server account with sudo access and ensured remote root login is disabled  
 6. Installed Apache Web Server package  
 7. Installed mod_wsgi Apache module, which helps Apache host WSGI spec-compliant Python applications  
-   * Modified Apache config file '000-default.conf' to configure Apache to use the WSGI module to handle requests
+   * Created new Apache config file 'catalog.conf' to configure new Apache VirtualHost to use the WSGI module to handle requests
 8. Installed PostgreSQL Database package  
 9. Set system local timezone to UTC  
 10. Item Catalog app dependencies configuration  
     1. Enabled a python virtual environment for the web application  
     2. Installed the app's python module dependencies to the virtual environment  
      * Python modules: flask, sqlalchemy, flask-sqlalchemy, psycopg2, oauth2client, requests  
-    3. Created PostgreSQL user with limited (create DB only) permissions to app's database  
+    3. Created PostgreSQL 'itemcatalog' database and 'catalog' user with limited (create DB only) permissions to app's database  
+    4. Modified PostgreSQL config file 'pg_hba.conf' to use md5 instead of peer authentication for local database connections  
 11. Downloaded and modified [Item Catalog app's source code](https://github.com/kennychatkara/fullstack-nanodegree-vm) to run on server in Python virtual environment using PostgreSQL database  
+    1. Changed database usage from SQlite to PostgreSQL in database.py at SQLAlchemy create_engine operation  
+    2. Updated connection to PostgreSQL 'itemcatalog' database with 'catalog' user  
+    3. Updated client_secrets.json path in application.py to use absolute path of server's app hosting directory  
+    4. Added server IP address and DNS domain to Google Cloud Client Credentials and update server client_secrets.json file  
 
 
 **Resources**
